@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "backend\\bin\\Release\\net8.0\\publish",
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/ed9b8786-81cd-4319-a881-d63ab5b6762c/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/micro-apps"
+}
