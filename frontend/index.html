@@ -3,27 +3,29 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="pico.min.css" />
         <title>Console apps</title>
         <link rel="stylesheet" href="./css/index.css" />
         <link rel="stylesheet" href="./css/rectangle.css" />
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="./css/output.css" rel="stylesheet" />
         <script src="./scripts/index.js"></script>
     </head>
 
     <body>
-        <label for="console app">Which app do you want to talk to?</label>
+        <label class="text-4xl font-bold underline" for="console app">Which app do you want to talk to?</label>
         <select name="console app" id="console-app-selector"></select>
         <input type="text" id="text-input" placeholder="Say something to the app..." />
         <ul id="message-history"></ul>
-        <button class="btn" onclick="my_modal_2.showModal()">open modal</button>
-        <dialog id="my_modal_2" class="modal">
-            <div class="modal-box">
-                <h3 class="text-lg font-bold">Hello!</h3>
-                <p class="py-4">Press ESC key or click outside to close</p>
+        <div class="chat chat-start">
+            <div class="chat-bubble">
+                It's over Anakin,
+                <br />
+                I have the high ground.
             </div>
-            <form method="dialog" class="modal-backdrop">
-                <button>close</button>
-            </form>
-        </dialog>
+        </div>
+        <div class="chat chat-end">
+            <div class="chat-bubble">You underestimate my power!</div>
+        </div>
     </body>
 </html>
